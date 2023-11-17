@@ -163,13 +163,25 @@ Sekarang saatnya untuk masuk ke database MariaDB kita sebagai root dan membuat d
 
 ![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/b14ea21d-48e3-4e66-a3e6-90bbf392b215)
 
-> Buat database untuk instalasi WordPress kita.
+Buat database untuk instalasi WordPress kita.
+
 `CREATE DATABASE wordpress_db;`
->Selanjutnya, buatlah pengguna database untuk pengaturan WordPress kita.
-`CREATE USER 'wp user'@`
 
+Selanjutnya, buatlah pengguna database untuk pengaturan WordPress kita.
 
+`CREATE USER 'wp user'@'localhost' IDENTIFIED BY 'password';`
 
+Selanjutnya, berikan hak istimewa kepada pengguna untuk mengakses database
+
+`GRANT ALL ON wordpress_db.* TO 'wp_user'@'localhost' IDENTIFIED BY 'password'`
+
+Setelah itu kalian bisa keluar dari database
+
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/1eca05c0-fb68-47f4-a7d6-7f54ca4da172)
+
+Contoh :
+
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/962c52ad-5796-4d23-9b71-cd51dc837069)
 
 
 
