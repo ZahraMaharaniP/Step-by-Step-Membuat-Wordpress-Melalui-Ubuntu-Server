@@ -183,12 +183,54 @@ Contoh :
 
 ![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/962c52ad-5796-4d23-9b71-cd51dc837069)
 
+## Step 5: Install WordPress CMS
+
+- Buka direktori temporer dan unduh file WordPress terbaru.
+`cd /tmp && wget https://wordpress.org/latest.tar.gz
+
+- Selanjutnya, buka kompresi tarball yang akan menghasilkan folder bernama "wordpress".
+`tar -xvf latest.tar.gz`
+
+- Salin folder wordpress ke jalur /var/www/html/
+`cp -R wordpress /var/www/html/`
+
+- Jalankan perintah di bawah ini untuk mengubah kepemilikan direktori 'wordpress'.
+`chown -R www-data:www-data /var/www/html/wordpress/`
+
+- Jalankan perintah di bawah ini untuk mengubah kepemilikan direktori 'wordpress'.
+`chmod -R 755 /var/www/html/wordpress`
+
+- Buat direktori ‘uploads’.
+`mkdir /var/www/html/wordpress/wp-content/uploads/`
+
+- Terakhir, ubah izin direktori 'uploads'.
+`chown -R www-data:www-data /var/www/html/wordpress/wp-content/uploads/`
+
+- Buka URL server
+`https://server-ip/wordpress`
+
+Kita akan dihadapkan pada wizard WordPress dan daftar kredensial yang diperlukan untuk berhasil dalam pengaturannya. Isi formulir seperti yang ditunjukkan dengan kredensial yang ditentukan saat membuat basis data WordPress di basis data MariaDB. Abaikan host database dan awalan tabel dan tekan tombol 'Kirim'. Jika semua detail sudah benar, kita akan diberi lampu hijau untuk melanjutkan. Isi detail tambahan yang diperlukan seperti judul situs, nama pengguna, dan kata sandi dan simpan di tempat yang aman agar tidak lupa. Pastikan untuk menggunakan kata sandi yang kuat. Scroll ke bawah dan tekan 'Instal WordPress'. Jika semua berjalan lancar, maka kita akan mendapatkan notifikasi 'sukses' seperti yang ditunjukkan. Klik tombol 'Login' untuk mengakses halaman login dari instalasi WordPress yang baru. Masukkan informasi login dan tekan.
 
 
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/fecabeed-a828-45c6-9302-791ca72d8489)
 
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/4c9507b4-bc6d-41dc-ba90-d2b03400eb00)
 
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/fa2c4a1f-c1c1-4603-8af8-95fa79301850)
 
+Jika wordpress sudah berhasil dibuat, kita bisa mengedit wordpress tersebut sesuai keinginan kita, terdapat banyak fitur di wordpress yang bisa mengasah kreatifitas kita. Sebagai contoh saya menggunakan tema yang telah tersedia di wordpress. Lalu saya mencoba mengedit, dan memposting di wordpress saya.
 
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/9f9212ce-f5f8-4659-8baf-abc1a1638591)
+
+Disini terlihat saya sudah memposting 3 hal yaitu Hello, Movies Rating by Zara, dan Zara’s College Life. Kalian juga bisa mengedit sesuka kalian untuk wordpress ini. Berikut hasil akhir dari tampilan yang saya buat.
+
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/105e9ddf-f8ea-4754-a159-65e0838efeb6)
+
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/15c90c2d-b2f6-410e-91c5-30c8f9fcbce5)
+
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/65ab6e5d-84b9-4510-9c52-755fb2c528d5)
+
+![image](https://github.com/ZahraMaharaniP/Step-by-Step-Membuat-Wordpress-Melalui-Ubuntu-Server/assets/149281915/43ca26db-0be4-4288-a69f-4b0d7922a244)
 
 
 
